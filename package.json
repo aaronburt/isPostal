@@ -1,5 +1,5 @@
 {
-  "name": "@aaronburt/isPostal",
+  "name": "@aaronburt/is-postal",
   "version": "1.0.0",
   "description": "Postal code validation for multiple countries.",
   "main": "./dist/main.js",
