@@ -1,31 +1,31 @@
-# Typescript-template
+# @aaronburt/isPostal
 
-This is designed to give me an instant template for Typescript development environment. 
+This package provides postal code validation for multiple countries.
 
+## Installation
 
-### Current Environment Settings
+To install this package, you can use npm:
 
-```js
-type: module
-module: nodenext
-target: es2021
-rootDir: "./src"
-outDir: "./dist"
+```bash
+npm install @aaronburt/isPostal
 ```
 
-- Concurrently dev installed
-- Nodemon dev installed
-- Typescript dev installed
+```js
+import Postal from '@aaronburt/isPostal';
 
-### Things to add, amend, remove or change
+const usPostalCode = '12345';
+const isUSPostal = Postal.isUSPostalCode(usPostalCode);
+console.log(`Is US Postal Code valid? ${isUSPostal}`); // Output: Is US Postal Code valid? true
+```
 
-#### Package.json
-
-- Change the name
-- Amend the version
-- Add a description
-- Add Keywords
-
-### Readme.md
-
-- Remove the readme.md
+## Supported Countries and Validation Methods
+* United States: isUSPostalCode
+* Canada: isCanadaPostalCode
+* United Kingdom: isUKPostalCode
+* Australia: isAustraliaPostalCode
+* Germany: isGermanyPostalCode
+* Japan: isJapanPostalCode
+* France: isFrancePostalCode
+* Spain: isSpainPostalCode
+* Italy: isItalyPostalCode
+* India: isIndiaPostalCode
