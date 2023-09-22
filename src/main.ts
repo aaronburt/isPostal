@@ -1,10 +1,23 @@
 // noinspection JSUnusedGlobalSymbols
 
 export default class Postal {
+
+    /**
+     * Validates a postal code using the provided pattern.
+     * @param {string} postalCode - The postal code to validate.
+     * @param {RegExp} pattern - The regular expression pattern for validation.
+     * @returns {boolean} True if the postal code is valid according to the pattern, false otherwise.
+     */
     private static validatePostalCode(postalCode: string, pattern: RegExp): boolean {
         return pattern.test(postalCode);
     }
 
+    /**
+     * Validates a postal code using the provided pattern.
+     * @param {string} postalCode - The postal code to validate.
+     * @param {RegExp} pattern - The regular expression pattern for validation.
+     * @returns {boolean} True if the postal code is valid according to the pattern, false otherwise.
+     */
     public static isPostalCode(postalCode: string, pattern: RegExp): boolean {
         return this.validatePostalCode(postalCode, pattern);
     }
